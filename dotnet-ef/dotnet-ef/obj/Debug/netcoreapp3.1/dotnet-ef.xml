@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dotnet-ef</name>
+    </assembly>
+    <members>
+        <member name="M:dotnet_ef.Controllers.ProdutosController.Get">
+            <summary>
+            Ler todos os produtos cadastrados
+            </summary>
+            <returns>Produtos</returns>
+        </member>
+        <member name="M:dotnet_ef.Controllers.ProdutosController.Get(System.Guid)">
+            <summary>
+            Ler um produto a partir do seu Id
+            </summary>
+            <param name="id">Id do Produto</param>
+            <returns>Produto pelo seu Id</returns>
+        </member>
+        <member name="M:dotnet_ef.Controllers.ProdutosController.Post(dotnet_ef.Domains.Produto)">
+            <summary>
+            Cadastra um produto no banco de dados
+            </summary>
+            <param name="produto"></param>
+            <returns>Produto já cadastrado</returns>
+        </member>
+        <member name="M:dotnet_ef.Controllers.ProdutosController.Put(System.Guid,dotnet_ef.Domains.Produto)">
+            <summary>
+            Altera um produto já cadastrado no banco de dados.
+            </summary>
+            <param name="id">Id do Produto</param>
+            <param name="produto">Produto alterado</param>
+            <returns>Produto já alterado</returns>
+        </member>
+        <member name="M:dotnet_ef.Controllers.ProdutosController.Delete(System.Guid)">
+            <summary>
+            Delete um produto a partir do seu Id.
+            </summary>
+            <param name="id">Id do Produto</param>
+            <returns>Ok</returns>
+        </member>
+        <member name="T:dotnet_ef.Domains.Produto">
+            <summary>
+            Domínio referente ao Produto.
+            </summary>
+        </member>
+        <member name="M:dotnet_ef.Interface.IPedido.Adicionar(System.Collections.Generic.List{dotnet_ef.Domains.PedidoItem})">
+            <summary>
+            Adiciona um novo pedido.
+            </summary>
+            <param name="pedidosItens"></param>
+            <returns>Pedido</returns>
+        </member>
+        <member name="M:dotnet_ef.Repositories.ProdutoRepository.Adicionar(dotnet_ef.Domains.Produto)">
+            <summary>
+            Adiciona um produto
+            </summary>
+            <param name="produto"></param>
+        </member>
+        <member name="M:dotnet_ef.Repositories.ProdutoRepository.BuscarPorID(System.Guid)">
+            <summary>
+            Busca um produto por seu Id.
+            </summary>
+            <param name="id"></param>
+            <returns>Retorna o produto buscado pelo Id.</returns>
+        </member>
+        <member name="M:dotnet_ef.Repositories.ProdutoRepository.BuscarPorNome(System.String)">
+            <summary>
+            Busca pelo nome do produto.
+            </summary>
+            <param name="nome"></param>
+            <returns>Retorna o produto buscado pelo nome.</returns>
+        </member>
+        <member name="M:dotnet_ef.Repositories.ProdutoRepository.Editar(dotnet_ef.Domains.Produto)">
+            <summary>
+            Edita um produto já cadastrado.
+            </summary>
+            <param name="produto"></param>
+        </member>
+        <member name="M:dotnet_ef.Repositories.ProdutoRepository.Excluir(System.Guid)">
+            <summary>
+            Deleta um produto já cadastrado.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:dotnet_ef.Repositories.ProdutoRepository.Listar">
+            <summary>
+            Lista todos os produtos cadastrados.
+            </summary>
+            <returns>Retorna todos os produtos e seus dados, respectivamente.</returns>
+        </member>
+    </members>
+</doc>
